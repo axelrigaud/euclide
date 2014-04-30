@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Euclidean rythm web audio app</title>
+	<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.10.4.custom.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/euclidean.css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Arvo' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="container">
+	<h1>Euclidean rhythms generator</h1>
+	<div id="description">
+		<p>
+			Grace à l'algorithme d'Euclide, nous pouvons générer des motifs rythmiques dont la distribution des accents est la plus égale possible. En jouant avec l'application ci-dessous, vous allez pouvoir combiner ces rythmes remarquables entre eux.
+		</p>
+		</br>
+		<p>
+			Cliquez sur les flèches pour définir un rythme à chaque élément de batterie disponible : kick (grosse caisse), snare (caisse claire), hihat (cymbale charley) et shaker. Pour chaque rythme, vous pouvez définir n la longueur du cycle, et k la quantité d'accents à répartir. Lorsque le séquenceur arrive à la fin de la séquence globale (dont vous pouvez également changer la longueur), tous les rythmes repartent de 0. Ainsi les différents éléments de batterie ne se décalent pas progressivement pendant plusieurs cycles.
+		</p>
+		</br>
+		<p>
+			Pour lancer la lecture de votre séquence, vous n'avez plus qu'à cliquer sur l'icône de lecture. La valeur située immédiatement à sa droite définie la longueur de la séquence, et la valeur encore à droite, le tempo.
+		</p>
+	</div>
+</div>
+<footer>
+	<p>contact : axel.rigaud (a) gmail.com</p>
+</footer>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.js"></script>
+<script src="js/sheduler.js"></script>
+</body>
+</html>
