@@ -103,7 +103,6 @@ h1 {
 
 #container > span, #go{
 	margin-top:20px;
-	left:40%;
 	margin-right:10px;
 }
 
@@ -212,4 +211,7 @@ footer {
 	font-size:small;
 	position:absolute;
 	bottom:0;
+}
+.transport-element {
+	display:inline;
 }
