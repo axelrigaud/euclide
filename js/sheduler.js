@@ -162,16 +162,16 @@ function appendInstrument(trackName){
 		instrumentTrack.appendChild(square);
 	}
 	
-	container = document.getElementById('container');
-	container.appendChild(instrumentTrack);
+	sequencer = document.getElementById('sequencer');
+	sequencer.appendChild(instrumentTrack);
 }
 
 function appendPlayButton(){
 	var playButton = document.createElement('button');
 	playButton.id='go';
 	playButton.innerHTML="play";
-	container = document.getElementById('container');
-	container.appendChild(playButton);
+	sequencer = document.getElementById('sequencer');
+	sequencer.appendChild(playButton);
 }
 
 function appendLoopLength(){
@@ -179,8 +179,8 @@ function appendLoopLength(){
 	loopLength.type="text";
 	loopLength.value=32;
 	loopLength.id='looplength';
-	container = document.getElementById('container');
-	container.appendChild(loopLength);
+	sequencer = document.getElementById('sequencer');
+	sequencer.appendChild(loopLength);
 }
 
 function appendTempo(){
@@ -190,9 +190,9 @@ function appendTempo(){
 	tempo.id='tempo-input';
 	
 	
-	container = document.getElementById('container');
+	sequencer = document.getElementById('sequencer');
 
-	container.appendChild(tempo);
+	sequencer.appendChild(tempo);
 }
 
 //pour une raison que j'ignore je dois mettre le jQuery dans une fonction à part de appendInstrument
