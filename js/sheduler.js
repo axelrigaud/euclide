@@ -166,34 +166,9 @@ function appendInstrument(trackName){
 	tracks.appendChild(instrumentTrack);
 }
 
-function appendPlayButton(){
-	var playButton = document.createElement('button');
-	playButton.id='go';
-	playButton.innerHTML="play";
-	transport = document.getElementById('transport');
-	transport.appendChild(playButton);
-}
 
-function appendLoopLength(){
-	var loopLength = document.createElement('input');
-	loopLength.type="text";
-	loopLength.value=32;
-	loopLength.id='looplength';
-	transport = document.getElementById('transport');
-	transport.appendChild(loopLength);
-}
 
-function appendTempo(){
-	var tempo = document.createElement('input');
-	tempo.type='text';
-	tempo.value=90;
-	tempo.id='tempo-input';
-	
-	
-	transport = document.getElementById('transport');
 
-	transport.appendChild(tempo);
-}
 
 //pour une raison que j'ignore je dois mettre le jQuery dans une fonction à part de appendInstrument
 function spinInstrument(trackName){
@@ -227,7 +202,6 @@ appendInstrument('snare');
 appendInstrument('hihat');
 appendInstrument('shaker');
 
-appendPlayButton();
 $("#go").button({
 	text: false,
 	icons: {
@@ -256,7 +230,7 @@ $("#go").button({
 	    });
 
 
-appendLoopLength();
+
 $('#looplength').spinner({
 	min: 1,
 	max: 32,
@@ -273,7 +247,7 @@ $('#looplength').spinner({
 });
 
 
-appendTempo();
+
 $('#tempo-input').spinner({
 		min: 40,
 		max: 300,
