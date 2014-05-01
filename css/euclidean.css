@@ -101,10 +101,7 @@ h1 {
 	width:93%;
 }
 
-#container > span, #go{
-	margin-top:20px;
-	margin-right:10px;
-}
+
 
 .ui-spinner {
 	width: 60px;
@@ -211,6 +208,10 @@ footer {
 	font-size:small;
 	position:absolute;
 	bottom:0;
+}
+#transport {
+	margin-top:15px;
+	text-align:center;
 }
 .transport-element {
 	display:inline;
